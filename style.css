@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+
+}
+.main{
+    height: 95vh;
+    width: 100%;
+    background:linear-gradient(purple,silver);
+}
+h1{
+    font-size: 40px;
+    color: greenyellow;
+}
+button{
+    border: none;
+    background-color: rgb(29, 199, 29);
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+button img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50px;
+}
+#reset{
+    background-color: rgb(255, 67, 67);
+    color: black;
+}
+
+.display{
+    margin-top: 40px;
+    font-size: 30px;
+}
+#user-move{
+    color: orange;
+}
+#computer-move{
+    color: lime;
+}
+#result-move{
+    color: rgb(246, 58, 58);
+}
+#score-move{
+    color: yellow;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    font-size: 20px;
+    height: 5vh;
+}
+
+@media only screen and (max-width: 500px){
+    h1{
+        font-size: 30px;
+    }
+    button{
+        background-color: rgb(29, 199, 29);
+        font-size: 20px;
+        padding: 12px;
+    }
+    .display{
+        font-size: 20px;
+    }
+}

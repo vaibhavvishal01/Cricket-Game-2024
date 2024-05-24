@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cricket Game 2023</title>
+</head>
+<body>
+  
+</body>
+</html>
+
+<body>
+  <div class="main">
+    <h1>Bat Ball Stump Game</h1>
+    <button onclick="
+  let computerChoice = generateComputerChoice();
+  let resultMsg = getResult('Bat', computerChoice);
+  showResult('Bat', computerChoice, resultMsg);
+  "><img src="images/bat.png" alt="Bat Image"></button>
+
+    <button onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Ball', computerChoice);
+    showResult('Ball', computerChoice, resultMsg);
+  "><img src="images/ball.png" alt="Ball Image"></button>
+
+    <button onclick="
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Stump', computerChoice);
+    showResult('Stump', computerChoice, resultMsg);
+  "><img src="images/stump.png" alt="stump Image"></button>
+
+    <button id="reset" onclick="localStorage.clear()
+  alert('score is reset please refresh it') 
+  ">Reset</button>
+
+  <div class="display">
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result-move"></h3>
+    <h3 id="score-move"></h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+  <footer>Developed by Vaibhav Vishal</footer>
+
+</body>
+
+</html>
